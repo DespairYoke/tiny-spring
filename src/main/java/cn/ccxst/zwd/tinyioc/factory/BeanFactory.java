@@ -13,7 +13,7 @@ import java.util.concurrent.ConcurrentHashMap;
 public interface BeanFactory {
 
 
-    void reigisterBeanDefinition(String beanName, BeanDefinition beanDefinition);
+    void reigisterBeanDefinition(String beanName, BeanDefinition beanDefinition) throws Exception;
 
     Object getBean(String beanName);
 }

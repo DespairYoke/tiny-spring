@@ -10,16 +10,19 @@ import org.junit.Test;
 public class BeanFactoryTest {
 
 	@Test
-	public void test() {
+	public void test() throws Exception {
 		// 1.初始化beanfactory
 		BeanFactory beanFactory = new AutowireCapableBeanFactory();
 
-		// 2.注入bean
+		// 2.初始化bean对象
 		BeanDefinition beanDefinition = new BeanDefinition();
 		beanDefinition.setBeanClassName("cn.ccxst.zwd.tinyioc.HelloWorldService");
+		PropertyValues propertyValues = new PropertyValues();
+		propertyValues.addPropertyValue(new PropertyValue("text","Hello World !"));
+		beanDefinition.setPropertyValues(propertyValues);
+		//3.注册bean
 		beanFactory.reigisterBeanDefinition("helloWorldService", beanDefinition);
-
-        // 3.获取bean
+        // 4.获取bean
         HelloWorldService helloWorldService = (HelloWorldService) beanFactory.getBean("helloWorldService");
         helloWorldService.helloWorld();
 
