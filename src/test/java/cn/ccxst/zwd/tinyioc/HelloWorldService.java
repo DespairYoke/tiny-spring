@@ -7,6 +7,8 @@ public class HelloWorldService {
 
     private String text;
 
+    private OutputService outputService;
+
     public String getText() {
         return text;
     }
@@ -16,6 +18,10 @@ public class HelloWorldService {
     }
 
     public void helloWorld(){
-        System.out.println(text);
+        outputService.output(text);
+    }
+
+    public void setOutputService(OutputService outputService) {
+        this.outputService = outputService;
     }
 }

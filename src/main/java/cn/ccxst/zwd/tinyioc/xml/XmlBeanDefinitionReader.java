@@ -2,6 +2,7 @@ package cn.ccxst.zwd.tinyioc.xml;
 
 import cn.ccxst.zwd.tinyioc.AbstractBeanDefinitionReader;
 import cn.ccxst.zwd.tinyioc.BeanDefinition;
+import cn.ccxst.zwd.tinyioc.BeanReference;
 import cn.ccxst.zwd.tinyioc.PropertyValue;
 import cn.ccxst.zwd.tinyioc.io.ResourceLoader;
 import org.w3c.dom.Document;
@@ -72,7 +73,15 @@ public class XmlBeanDefinitionReader extends AbstractBeanDefinitionReader {
                 Element propertyEle = (Element) node;
                 String name = propertyEle.getAttribute("name");
                 String value = propertyEle.getAttribute("value");
-                beanDefinition.getPropertyValues().addPropertyValue(new PropertyValue(name,value));
+                if (value!=null && value.length()>0) {
+					beanDefinition.getPropertyValues().addPropertyValue(new PropertyValue(name,value));
+				}
+				else {
+					String ref = propertyEle.getAttribute("ref");
+					BeanReference beanReference = new BeanReference(ref);
+					beanDefinition.getPropertyValues().addPropertyValue(new PropertyValue(name,beanReference));
+				}
+
             }
         }
     }
