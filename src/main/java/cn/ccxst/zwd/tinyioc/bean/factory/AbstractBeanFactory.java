@@ -1,12 +1,11 @@
-package cn.ccxst.zwd.tinyioc.factory;
+package cn.ccxst.zwd.tinyioc.bean.factory;
 
-import cn.ccxst.zwd.tinyioc.BeanDefinition;
+import cn.ccxst.zwd.tinyioc.bean.BeanDefinition;
 import cn.ccxst.zwd.tinyioc.BeanReference;
-import cn.ccxst.zwd.tinyioc.PropertyValue;
+import cn.ccxst.zwd.tinyioc.bean.PropertyValue;
 
 import java.lang.reflect.Field;
 import java.util.*;
-import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * @author zwd
@@ -15,7 +14,7 @@ import java.util.concurrent.ConcurrentHashMap;
  */
 public abstract class AbstractBeanFactory implements BeanFactory{
 
-    private Map<String,BeanDefinition> beanDefinitionMap = new HashMap<>();
+    private Map<String,BeanDefinition> beanDefinitionMap = new HashMap<String,BeanDefinition>();
 
     private final List<String> beanDefinitionNames = new ArrayList<String>();
     public Object getBean(String bearnName) throws Exception {

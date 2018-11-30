@@ -1,7 +1,7 @@
 package cn.ccxst.zwd.tinyioc.context;
 
-import cn.ccxst.zwd.tinyioc.BeanDefinition;
-import cn.ccxst.zwd.tinyioc.factory.AbstractBeanFactory;
+import cn.ccxst.zwd.tinyioc.bean.BeanDefinition;
+import cn.ccxst.zwd.tinyioc.bean.factory.AbstractBeanFactory;
 
 /**
  * @author zwd

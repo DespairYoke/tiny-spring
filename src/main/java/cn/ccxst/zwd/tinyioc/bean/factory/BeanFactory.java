@@ -1,9 +1,6 @@
-package cn.ccxst.zwd.tinyioc.factory;
+package cn.ccxst.zwd.tinyioc.bean.factory;
 
-import cn.ccxst.zwd.tinyioc.BeanDefinition;
-
-import java.util.Map;
-import java.util.concurrent.ConcurrentHashMap;
+import cn.ccxst.zwd.tinyioc.bean.BeanDefinition;
 
 /**
  * @author zwd

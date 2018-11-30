@@ -1,10 +1,10 @@
-package cn.ccxst.zwd.tinyioc.xml;
+package cn.ccxst.zwd.tinyioc.bean.xml;
 
-import cn.ccxst.zwd.tinyioc.AbstractBeanDefinitionReader;
-import cn.ccxst.zwd.tinyioc.BeanDefinition;
+import cn.ccxst.zwd.tinyioc.bean.AbstractBeanDefinitionReader;
+import cn.ccxst.zwd.tinyioc.bean.BeanDefinition;
 import cn.ccxst.zwd.tinyioc.BeanReference;
-import cn.ccxst.zwd.tinyioc.PropertyValue;
-import cn.ccxst.zwd.tinyioc.io.ResourceLoader;
+import cn.ccxst.zwd.tinyioc.bean.PropertyValue;
+import cn.ccxst.zwd.tinyioc.bean.io.ResourceLoader;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;

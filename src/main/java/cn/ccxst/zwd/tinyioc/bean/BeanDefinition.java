@@ -1,4 +1,4 @@
-package cn.ccxst.zwd.tinyioc;
+package cn.ccxst.zwd.tinyioc.bean;
 
 /**
  * @author zwd

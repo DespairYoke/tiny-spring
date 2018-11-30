@@ -1,4 +1,4 @@
-package cn.ccxst.zwd.tinyioc;
+package cn.ccxst.zwd.tinyioc.bean;
 
 /**
  * 从配置中读取BeanDefinitionReader

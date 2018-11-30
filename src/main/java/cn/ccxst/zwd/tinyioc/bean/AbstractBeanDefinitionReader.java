@@ -1,8 +1,8 @@
-package cn.ccxst.zwd.tinyioc;
+package cn.ccxst.zwd.tinyioc.bean;
 
 
 
-import cn.ccxst.zwd.tinyioc.io.ResourceLoader;
+import cn.ccxst.zwd.tinyioc.bean.io.ResourceLoader;
 
 import java.util.HashMap;
 import java.util.Map;

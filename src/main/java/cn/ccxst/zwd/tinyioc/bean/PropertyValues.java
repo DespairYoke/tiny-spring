@@ -1,4 +1,4 @@
-package cn.ccxst.zwd.tinyioc;
+package cn.ccxst.zwd.tinyioc.bean;
 
 import java.util.ArrayList;
 import java.util.List;

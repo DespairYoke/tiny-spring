@@ -1,8 +1,8 @@
-package cn.ccxst.zwd.tinyioc.factory;
+package cn.ccxst.zwd.tinyioc.bean.factory;
 
-import cn.ccxst.zwd.tinyioc.BeanDefinition;
+import cn.ccxst.zwd.tinyioc.bean.BeanDefinition;
 import cn.ccxst.zwd.tinyioc.BeanReference;
-import cn.ccxst.zwd.tinyioc.PropertyValue;
+import cn.ccxst.zwd.tinyioc.bean.PropertyValue;
 
 import java.lang.reflect.Field;
 

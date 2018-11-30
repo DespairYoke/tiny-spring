@@ -12,7 +12,7 @@
         <property name="helloWorldService" ref="helloWorldService"></property>
     </bean>
 
-    <bean name="helloWorldService" class="cn.ccxst.zwd.tinyioc.HelloWorldService">
+    <bean name="helloWorldService" class="cn.ccxst.zwd.tinyioc.HelloWorldServiceImpl">
         <property name="text" value="Hello World!"></property>
         <property name="outputService" ref="outputService"></property>
     </bean>

@@ -1,10 +1,10 @@
 package cn.ccxst.zwd.tinyioc.context;
 
-import cn.ccxst.zwd.tinyioc.BeanDefinition;
-import cn.ccxst.zwd.tinyioc.factory.AbstractBeanFactory;
-import cn.ccxst.zwd.tinyioc.factory.AutowireCapableBeanFactory;
-import cn.ccxst.zwd.tinyioc.io.ResourceLoader;
-import cn.ccxst.zwd.tinyioc.xml.XmlBeanDefinitionReader;
+import cn.ccxst.zwd.tinyioc.bean.BeanDefinition;
+import cn.ccxst.zwd.tinyioc.bean.factory.AbstractBeanFactory;
+import cn.ccxst.zwd.tinyioc.bean.factory.AutowireCapableBeanFactory;
+import cn.ccxst.zwd.tinyioc.bean.io.ResourceLoader;
+import cn.ccxst.zwd.tinyioc.bean.xml.XmlBeanDefinitionReader;
 
 import java.util.Map;
 

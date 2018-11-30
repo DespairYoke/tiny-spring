@@ -1,4 +1,4 @@
-package cn.ccxst.zwd.tinyioc.io;
+package cn.ccxst.zwd.tinyioc.bean.io;
 
 import java.net.URL;
 
